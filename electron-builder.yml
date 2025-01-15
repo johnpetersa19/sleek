@@ -27,13 +27,11 @@ mac:
   artifactName: ${productName}-${version}-mac-${arch}.${ext}
   darkModeSupport: true
 dmg:
-  contents:
-    - x: 130
-      'y': 220
-    - x: 410
-      'y': 220
-      type: link
-      path: /Applications
+  window:
+    width: 550
+    height: 400
+    x: 130
+    y: 410    
 masDev:
   entitlements: ./assets/entitlements.mas.plist
   entitlementsInherit: ./assets/entitlements.mas.inherit.plist
